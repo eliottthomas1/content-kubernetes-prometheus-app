@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: comicbox-service
+  namespace: default
 spec:
   selector:
     app: comicbox
@@ -15,6 +16,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: comicbox
+  namespace: default
 spec:
   replicas: 1
   template:
