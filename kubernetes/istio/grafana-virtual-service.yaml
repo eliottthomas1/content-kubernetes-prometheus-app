@@ -12,7 +12,7 @@ spec:
   - match:
     - uri:
         prefix: /grafana
-  - route:
+    route:
     - destination:
         host: flagger-grafana
         port:
